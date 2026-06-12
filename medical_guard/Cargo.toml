@@ -4,12 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-# "cdylib" sorgt dafür, dass Rust eine dynamische Bibliothek erzeugt, die Python laden kann.
+# “cdylib” ensures that Rust generates a dynamic library that Python can load.
 name = "medical_guard"
 crate-type = ["cdylib"]
 
 [dependencies]
-# PyO3 ist das Framework für die Python-Anbindung
+# PyO3 is the framework for Python integration
 pyo3 = { version = "0.21", features = ["extension-module"] }
 
 [package.metadata.maturin]
